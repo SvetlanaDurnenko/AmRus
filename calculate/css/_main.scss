@@ -1,0 +1,145 @@
+h2 {
+    font-family: $accentFontFamily;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+.calculate-container {
+    border-left: 2px solid $accentColor;
+    margin-bottom: 140px;
+    margin-left: 90px;
+    padding-left: 30px;
+}
+
+.calculate-form-container {
+    max-width: 870px;
+    margin: 0 auto;
+}
+
+#usd,
+#eur {
+    display: none;
+}
+
+.calculate-currency span {
+    font-size: $fontSizeAccent;
+    font-weight: 600;
+}
+
+.currency {
+    cursor: pointer;
+    border: 2px solid $mainTextColor;
+    border-radius: 8px;
+    height: 47px;
+    display: inline-flex;
+    width: 79px;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculate-currency {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.price-calculate {
+    flex-basis: 47%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    min-height: 150px;
+}
+
+form input,
+select {
+    height: 47px;
+    width: 100%;
+    border: 2px solid $mainTextColor;
+    border-radius: 8px;
+    font-size: $textFontSize;
+    padding-left: 14px;
+}
+
+select {
+    width: 100%;
+}
+
+.label-flex {
+    flex-basis: 47%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    min-height: 150px;
+    margin-bottom: 0;
+}
+
+.form-select,
+.form-select2 {
+    appearance: none;
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 95%;
+    cursor: pointer;
+}
+
+
+.form-select-active {
+    background-image: url(../img/arrowClick.png);
+}
+
+.lng-button-calculate {
+    background-color: $accentColor;
+    border: none;
+    cursor: pointer;
+    height: 3em;
+    width: 12em;
+    font-size: $fontSizeAccent;
+    border-radius: .5em;
+    color: #FFFFFF;
+    margin-top: 70px;
+}
+
+.lng-button-calculate:hover {
+    box-shadow: $shadow;
+    transition: .8s;
+}
+
+#calculate-result {
+    margin-top: 70px;
+    border-top: 1px solid $mainTextColor;
+    padding-top: 70px;
+    font-size: $fontSizeAccent;
+    font-family: $mainFontFamily;
+    display: none;
+    justify-content: space-between;
+}
+
+.lng-total-amount {
+    font-weight: 600;
+}
+
+.left-part-result,
+.right-part-result {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    justify-content: space-between;
+}
+
+.right-part-result span {
+    font-weight: 600;
+}
+
+#total-amount {
+    color: $accentColor;
+}
+
+
+
+
+
+

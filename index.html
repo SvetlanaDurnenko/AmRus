@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmRus</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loading-window">
+            <div class="car">
+                <div class="strike"></div>
+                <div class="strike strike2"></div>
+                <div class="strike strike3"></div>
+                <div class="strike strike4"></div>
+                <div class="strike strike5"></div>
+                <div class="car-detail spoiler"></div>
+                <div class="car-detail back"></div>
+                <div class="car-detail center"></div>
+                <div class="car-detail center1"></div>
+                <div class="car-detail front"></div>
+                <div class="car-detail wheel"></div>
+                <div class="car-detail wheel wheel2"></div>
+            </div>
+            <div class="text">
+                <span>Loading</span><span class="dots">...</span>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="wrap">
+            <div class="logo">
+                <a class="logo-text" href="./index.html">AmRus</a>
+            </div>
+            <ul class="parts">
+                <!-- <li><a href="#" class="lng-about-us">Про нас</a></li> -->
+                <li><a href="./404/404.html" class="lng-cars-from-ukraine">Авто з України</a></li>
+                <li><a href="./404/404.html" class="lng-cars-from-korea">Авто з Кореї</a></li>
+                <li><a href="./calculate/calculate.html" class="lng-customs-clearance">Розмитнення</a></li>
+                <li><a href="./reviews/reviews.html" class="lng-reviews">Відгуки</a></li>
+            </ul>
+            <div class="currency-flex">
+                <div class="currency-wrap">
+                    <p id="USD"></p>
+                    <p>
+                        <span id="EUR-buy"></span>
+                        <span id="EUR-sale">&#8364;</span>
+                    </p>
+                </div>
+            </div>
+            <!-- <ul class="phone">
+                <li><a href="tel:0683812489">+380 68 38 12 489</a></li>
+                <li><a href="tel:0982825736">+380 98 28 25 736</a></li>
+            </ul> -->
+            <div class="menu-container">
+                <div class="language-container">
+                    <div class="langNow">
+                        <span id="langPage"></span>
+                        <span class="allow"></span>
+                    </div>
+                    <form id="language">
+                        <label class="changeLang">
+                            <input class="custom-radio" type="radio" name="languages" value="ua" id="lang-ua">
+                            <span id="firstLang">ua</span>
+                        </label>
+                        <label class="changeLang">
+                            <input class="custom-radio" type="radio" id="lang-ru" name="languages" value="ru">
+                            <span id="secondLang">ru</span>
+                        </label>
+                    </form>
+                </div>
+                <div class="menu">
+                    <img src="./img/menu.png" alt="menu">
+                </div>
+            </div>
+        </div>
+        <div class="menu-popup-fade">
+            <div class="menu-popup">
+                <a href="#" class="menu-popup-close"><img src="./img/Х.png" alt="Закрыть"></a>
+                <div class="menu-currency-flex">
+                    <div class="menu-currency-wrap">
+                        <p id="USD-menu"></p>
+                        <p>
+                            <span id="EUR-buy-menu"></span>
+                            <span id="EUR-sale-menu">&#8364;</span>
+                        </p>
+                    </div>
+                </div>
+                <ul class="menu-parts">
+                    <li><a href="./404/404.html" class="lng-cars-from-ukraine2">Авто з України</a></li>
+                    <li><a href="./404/404.html" class="lng-cars-from-korea2">Авто з Кореї</a></li>
+                    <li><a href="./calculate/calculate.html" class="lng-customs-clearance2">Розмитнення</a></li>
+                    <li><a href="./reviews/reviews.html" class="lng-reviews2">Відгуки</a></li>
+                </ul>
+                <div class="menu-footer-img-block">
+                    <a href="./404/404.html"><img src="./img/greenYoutube.png" alt="Youtube"></a>
+                    <a href="./404/404.html"><img src="./img/greenInstagram.png" alt="Instagram"></a>
+                    <a href="./404/404.html"><img src="./img/greenFacebook.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="mottoWrap">
+            <div class="mottoLeft">
+                <h1 class="lng-motto">У нас є автомобіль вашої мрії</h1>
+                <p class="lng-motto-text">Ми допоможемо вам обрати кращий варіант автомобіля з України та Кореї за
+                    прийнятною для вас ціною </p>
+                <button class="lng-contact" id="butScrol">Зв’язатися з нами</button>
+            </div>
+            <div class="mottoRight">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/car2.png" class="d-block" alt="Car">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/car1.jpg" class="d-block" alt="Car">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/car3.jpg" class="d-block" alt="Car">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Предыдущий</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Следующий</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="receipts">
+            <h2 class="lng-receipt">Нові надходження</h2>
+            <div class="receipt-container">
+                <a href="./product/product.html" class="new-car" id="first-new-car">
+                    <img class="img-new-car" src="./img/delete.png" alt="Car">
+                    <h3>Volkswagen Jetta SE</h3>
+                    <div class="new-car-flex">
+                        <div class="year-edition">
+                            <span class="lng-year-car">Рік випуску:</span><span> 2014</span>
+                        </div>
+                        <b class="price">$9 900</b>
+                    </div>
+                </a>
+                <a href="./product/product.html" class="new-car">
+                    <img class="img-new-car" src="./img/delete.png" alt="Car">
+                    <h3>Volkswagen Jetta SE</h3>
+                    <div class="new-car-flex">
+                        <div class="year-edition">
+                            <span class="lng-year-car-2">Рік випуску:</span><span> 2014</span>
+                        </div>
+                        <b class="price">$9 900</b>
+                    </div>
+                </a>
+                <a href="./product/product.html" class="new-car">
+                    <img class="img-new-car" src="./img/delete.png" alt="Car">
+                    <h3>Volkswagen Jetta SE</h3>
+                    <div class="new-car-flex">
+                        <div class="year-edition">
+                            <span class="lng-year-car-3">Рік випуску:</span><span> 2014</span>
+                        </div>
+                        <b class="price">$9 900</b>
+                    </div>
+                </a>
+                <a href="./product/product.html" class="new-car">
+                    <img class="img-new-car" src="./img/delete.png" alt="Car">
+                    <h3>Volkswagen Jetta SE</h3>
+                    <div class="new-car-flex">
+                        <div class="year-edition">
+                            <span class="lng-year-car-4">Рік випуску:</span><span> 2014</span>
+                        </div>
+                        <b class="price">$9 900</b>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="stages">
+            <h2 class="lng-stage">Етапи роботи з нами</h2>
+            <div class="stages-flex-container">
+                <div class="stage-img-container">
+                    <img src="./img/stage1.png" alt="Stage1">
+                    <span class="lng-stage1">Пошук авто та розрахунок вартості</span>
+                </div>
+                <div class="stage-img-container">
+                    <img src="./img/stage2.png" alt="Stage1">
+                    <span class="lng-stage2">Перевірка авто</span>
+                </div>
+                <div class="stage-img-container">
+                    <img src="./img/stage3.png" alt="Stage1">
+                    <span class="lng-stage3">Придбання авто</span>
+                </div>
+                <div class="stage-img-container">
+                    <img src="./img/stage4.png" alt="Stage1">
+                    <span class="lng-stage4">Доставка авто в Україну</span>
+                </div>
+                <div class="stage-img-container">
+                    <img src="./img/stage5.png" alt="Stage1">
+                    <span class="lng-stage5">Розмитнення та оформлення авто</span>
+                </div>
+            </div>
+        </div>
+        <div class="contact-us" id="formScrol">
+            <h2 class="lng-contact-us">Для зв’язку з нами</h2>
+            <p class="lng-text-before-form">Заповніть необхідні дані і наші менеджери незабаром вам зателефонують
+            </p>
+            <p class="lng-text-before-form2">*-обов’язково до заповнення</p>
+            <form class="form" action="telegram.php" method="post" onsubmit="return checkForm()">
+                <div class="form-flex-container">
+                    <input type="text" placeholder="Ім'я*" id="lng-form-name" name="user_name" required>
+                    <span class="lng-nameMist" id="nameMist">Некоректно введено ім'я</span>
+                </div>
+                <div class="form-flex-container">
+                    <input type="text" placeholder="Телефон*" name="user_phone" id="phone" required>
+                    <span class="lng-phoneMist" id="phoneMist">Введіть номер телефона у форматі +380ХХХХХХХХХ</span>
+                </div>
+                <div class="slider-wrap" id="first-slider">
+                    <p class="form-slider-price">
+                        <label for="amount" class="lng-form-price">Ціна:</label>
+                    <div class="price-wrap">
+                        <div class="price-left-part">
+                            <label>
+                                <span class="lng-from">від</span>
+                                <input type="text" id="amount" readonly name="price_from">
+                            </label>
+                        </div>
+                        <div class="price-right-part">
+                            <label>
+                                <span>до</span>
+                                <input type="text" id="amount2" readonly name="price_to">
+                            </label>
+                        </div>
+                    </div>
+                    </p>
+                    <div id="slider-range"></div>
+                </div>
+                <div class="slider-wrap">
+                    <p class="form-slider-price">
+                        <label for="amount3" class="lng-form-year">Рік випуску:</label>
+                    <div class="price-wrap">
+                        <div class="price-left-part">
+                            <label>
+                                <span class="lng-from2">від</span>
+                                <input type="text" id="amount3" readonly name="year_from">
+                            </label>
+                        </div>
+                        <div class="price-right-part">
+                            <label>
+                                <span>до</span>
+                                <input type="text" id="amount4" readonly name="year_to">
+                            </label>
+                        </div>
+                    </div>
+                    </p>
+                    <div id="slider-range2"></div>
+                </div>
+                <select class="form-select" name="car_body">
+                    <option value="Кузов" disabled selected class="main-option">Кузов</option>
+                    <option value="Любой" class="lng-form-body1">Будь-який</option>
+                    <option value="Седан">Седан</option>
+                    <option value="Кроссовер" class="lng-form-body2">Кросовер</option>
+                    <option value="Хэтчбек" class="lng-form-body3">Хетчбек</option>
+                    <option value="Универсал" class="lng-form-body4">Універсал</option>
+                    <option value="Купе">Купе</option>
+                    <option value="Минивен" class="lng-form-body5">Мінівен</option>
+                    <option value="Пикап" class="lng-form-body6">Пікап</option>
+                </select>
+                <select class="form-select2" name="fuel">
+                    <option value="Топливо" disabled selected class="lng-form-fuel1 main-option">Паливо</option>
+                    <option value="Бензин">Бензин</option>
+                    <option value="Дизель">Дизель</option>
+                    <option value="Газ">Газ</option>
+                    <option value="Газ/бензин">Газ/бензин</option>
+                    <option value="Гибрид" class="lng-form-fuel2">Гібрид</option>
+                    <option value="Электро" class="lng-form-fuel3">Електро</option>
+                </select>
+                <button class="lng-form-submit">Відправити дані</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <a class="logo-text" href="./index.html">AmRus</a>
+            </div>
+            <ul class="parts-footer">
+                <!-- <li><a href="#" class="lng-about-us-footer">Про нас</a></li> -->
+                <li><a href="./404/404.html" class="lng-cars-from-ukraine-footer">Авто з України</a></li>
+                <li><a href="./404/404.html" class="lng-cars-from-korea-footer">Авто з Кореї</a></li>
+                <li><a href="./calculate/calculate.html" class="lng-customs-clearance-footer">Розмитнення</a></li>
+                <li><a href="./reviews/reviews.html" class="lng-reviews-footer">Відгуки</a></li>
+            </ul>
+            <ul class="phone">
+                <li><a href="tel:0683812489">+380 68 38 12 489</a></li>
+                <li><a href="tel:0982825736">+380 98 28 25 736</a></li>
+            </ul>
+            <div class="footer-img-block">
+                <a href="./404/404.html"><img src="./img/youtube.png" alt="Youtube"></a>
+                <a href="./404/404.html"><img src="./img/instagram.png" alt="Instagram"></a>
+                <a href="./404/404.html"><img src="./img/facebook.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="./js/lang.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

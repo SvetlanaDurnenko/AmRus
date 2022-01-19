@@ -1,0 +1,254 @@
+#reviewsContainer {
+    border-left: 2px solid $accentColor;
+    padding-bottom: 50px;
+    margin-left: 90px;
+}
+.reviews-block {
+    margin-left: 80px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid $mainTextColor;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews-block:first-of-type {
+    padding-top: 0;
+}
+
+.reviews-flex-container {
+    flex-basis: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2 {
+    font-family: $accentFontFamily;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+h3 {
+    font-family: $accentFontFamily;
+    font-size: $fontSizeAccent;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.rating {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+.hidden--visually {
+    border: 0;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.rating__label {
+    cursor: pointer;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.rating__label::before {
+    content: url(../img/fullstar.png);
+    width: 27px;
+    height: 27px;
+}
+
+.rating__input:hover ~ .rating__label::before {
+    content: url(../img/star.png);
+}
+
+.rating__input:checked ~ .rating__label::before {
+    content: url(../img/star.png);
+}
+
+.name-user {
+    font-size: $fontSizeAccent;
+    font-weight: 600;
+}
+
+.text-user {
+    font-size: $textFontSize;
+}
+
+.star {
+    width: 27px;
+    height: 27px;
+}
+
+.date-reviews {
+    font-size: $textFontSize;
+}
+
+.img-reviews {
+    width: 287px;
+    height: 254px;
+    border-radius: 12px;
+    margin-right: 30px;
+}
+
+.stars-date-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container {
+    padding-top: 70px;
+    max-width: 835px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+}
+
+form input {
+    height: 47px;
+    width: 47%;
+    border: 2px solid $mainTextColor;
+    border-radius: 8px;
+    font-size: $textFontSize;
+    padding-left: 14px;
+}
+.lng-file-upload {
+    display: flex;
+    align-items: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.form-review {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 480px;
+}
+
+#lng-form-review {
+    flex-basis: 100%;
+    resize: none;
+    height: 190px;
+    border: 2px solid $mainTextColor;
+    border-radius: 8px;
+    font-size: $textFontSize;
+    padding-left: 14px;
+}
+
+.button-upload {
+    flex-basis: 100%;
+    margin: 0;
+    height: 47px;
+    width: 47%;
+    border: 2px solid $mainTextColor;
+    border-radius: 8px;
+    font-size: $textFontSize;
+    padding-left: 14px;
+    padding-right: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button-upload img {
+    width: 18px;
+    height: 20px;
+}
+
+.lng-send-review {
+    background-color: $accentColor;
+    border: none;
+    cursor: pointer;
+    height: 3em;
+    width: 12em;
+    font-size: $fontSizeAccent;
+    border-radius: 0.5em;
+    color: #ffffff;
+}
+
+.lng-send-review:hover {
+    box-shadow: $shadow;
+    transition: 0.8s;
+}
+
+.rating-stars {
+    flex-basis: 100%;
+    display: flex;
+}
+
+.lng-rating-text {
+    font-size: $textFontSize;
+}
+
+
+#myImage {
+    display: none;
+}
+
+.stars {
+    display: flex;
+    min-width: 150px;
+    justify-content: space-between;
+}
+
+.popup-fade {
+    display: none;
+}
+.popup-fade:before {
+    content: '';
+    background-color: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    z-index: 10000;
+}
+
+.popup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    padding: 20px;
+    width: 360px;
+    margin-left: -200px;
+    background-color: $background-color;
+    border-radius: 12px;
+    z-index: 100000;
+    opacity: 1;
+}
+
+.review-car {
+    width: 100%;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.popup-close img {
+    width: 70%;
+}
+
+.lng-thank {
+    margin-top: 80px;
+}
+
+

@@ -1,0 +1,320 @@
+.mottoWrap {
+    display: flex;
+    min-height: 450px;
+    position: relative;
+    padding-top: 30px;
+}
+h1 {
+    font-size: $fontSizeHead;
+    font-weight: 700;
+    font-family: $accentFontFamily;
+}
+.lng-motto-text {
+    font-size: $fontSizeAccent;
+    font-weight: 400;
+    font-family: $mainFontFamily;
+    max-width: 410px;
+}
+.lng-contact,
+.lng-form-submit {
+    background-color: $accentColor;
+    border: none;
+    cursor: pointer;
+    height: 3em;
+    width: 12em;
+    font-size: $fontSizeAccent;
+    border-radius: .5em;
+    color: #FFFFFF;
+}
+.lng-contact:hover,
+.lng-form-submit:hover {
+    box-shadow: $shadow;
+    transition: .8s;
+}
+.mottoLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mottoRight {
+    align-self: center;
+    flex-basis: 80%;
+}
+
+.carousel-control-next-icon {
+    background-image: url(../img/arrowback.png);
+    width: 30px;
+    height: 30px;
+    transform: rotateY(188deg);
+    position: absolute;
+    left: 55px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../img/arrowback.png);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 14px;
+} 
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1;
+}
+
+.carousel-control-next-icon:hover {
+    background-image: url(../img/arrowNext.png);
+    transform: rotateY(0deg);
+}
+
+.carousel-control-prev-icon:hover {
+    background-image: url(../img/arrowNext.png);
+    transform: rotateY(188deg);
+}
+
+.receipts,
+.stages {
+    padding-top: 120px;
+}
+
+.contact-us {
+    padding-top: 120px;
+    max-width: 835px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+
+h2 {
+    font-family: $accentFontFamily;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+h3 {
+    font-family: $mainFontFamily;
+    font-size: $fontSizeAccent;
+    font-weight: 600;
+}
+
+
+.new-car {
+    width: 290px;
+    height: 413px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+    transition: .8s;
+}
+
+.new-car:hover {
+    box-shadow: $shadow;
+    align-self: center;
+    cursor: pointer;
+}
+
+.img-new-car {
+   
+    border-radius: 12px;
+}
+
+.receipt-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.lng-year-car,
+.year-edition {
+    font-family: $mainFontFamily;
+    font-size: $textFontSize;
+}
+
+.price {
+    font-family: $mainFontFamily;
+    font-weight: 600;
+    font-size: $fontSizeAccent;
+}
+
+.new-car-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.stage-img-container {
+    width: 208px;
+    height: 226px;
+    box-shadow: $shadow;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 12px;
+}
+
+.stages-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.lng-stage1,
+.lng-stage2,
+.lng-stage3,
+.lng-stage4,
+.lng-stage5 {
+    font-size: $textFontSize;
+    font-family: $mainFontFamily;
+    text-align: center;
+}
+
+.lng-text-before-form {
+    font-size: $fontSizeAccent;
+    font-family: $mainFontFamily;
+}
+
+.lng-text-before-form2 {
+    font-size: $textFontSize;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+    flex-wrap: wrap;
+    font-size: $textFontSize;
+    min-height: 550px;
+}
+.form input,
+.form select {
+    height: 47px;
+    width: 47%;
+    border: 2px solid $mainTextColor;
+    border-radius: 8px;
+    font-size: $textFontSize;
+    padding-left: 14px;
+}
+
+.ui-state-default, 
+.ui-widget-content 
+.ui-state-default {
+    border: 1px solid $mainTextColor;
+    background: $mainTextColor;
+    width: 15px;
+    height: 20px;
+}
+
+.ui-widget-header {
+    border: 1px solid $mainTextColor;
+    background: $accentColor;
+    opacity: .8;
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid $mainTextColor;
+    border-radius: 10px;
+    height: 10px;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -0.3em;
+}
+
+.slider-wrap {
+    flex-basis: 47%;
+}
+
+.form-slider-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slider-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.price-wrap input {
+    border: 1px solid $mainTextColor;
+    border-radius: 4px;
+    height: 34px;
+    width: 120px;
+    text-align: center;
+    padding-left: 0;
+    font-size: $textFontSize;
+}
+
+.price-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.price-wrap span {
+    opacity: .5;
+    margin-right: 10px;
+}
+
+.form-select,
+.form-select2 {
+    flex-basis: 47%;
+    appearance: none;
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 47px;
+    background-position-x: 95%;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.form-select-active {
+    background-image: url(../img/arrowClick.png);
+}
+
+.main-option {
+    color: $accentColor;
+}
+
+option:hover {
+    background-color: $accentColor;
+}
+
+.lng-nameMist,
+.lng-phoneMist {
+    font-family: $accentFontFamily;
+    font-weight: 600;
+    color: red;
+    display: none;
+}
+
+.lng-phoneMist {
+    text-align: end;
+}
+
+.form-flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    min-height: 75px;
+}
+
+.form-flex-container input {
+    width: 100%;
+}
+
+.lng-form-submit {
+    margin-top: 15px;
+}
+
+.receipt-container a:hover {
+    color: $mainTextColor;
+}
+
+

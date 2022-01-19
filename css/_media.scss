@@ -1,0 +1,220 @@
+@media screen and (max-width:1200px) {
+    .parts {
+        display: none;
+    }
+    .currency-flex {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .wrap {
+        align-items: center;
+    }
+    .menu-container {
+        display: flex;
+        min-width: 130px;
+        justify-content: space-between;
+    }
+    .parts-footer {
+        display: none;
+    }
+    .footer-img-block {
+        display: none;
+    }
+    .footer-container {
+        align-items: center;
+    }
+};
+
+@media screen and (max-width:1320px) {
+    h1 {
+        font-size: 57px;
+    };
+};
+
+@media screen and (max-width:1280px) {
+    #first-new-car {
+        display: none;
+    };
+};
+
+@media screen and (max-width:1220px) {
+    .mottoWrap {
+        flex-direction: column;
+        align-items: center
+    };
+    .carousel-control-next-icon {
+        display: none;
+    };
+    .carousel-control-prev-icon {
+        display: none;
+    };
+    .mottoLeft {
+        max-width: 80%;
+        align-items: center;
+        min-height: 250px;
+        margin-bottom: 30px;
+    };
+    .lng-motto-text {
+        max-width: 100%;
+        text-align: center;
+    };
+    .receipts, 
+    .stages,
+    .contact-us {
+        padding-top: 60px;
+    };
+};
+
+@media screen and (max-width:1159px) {
+    .stage-img-container {
+        margin-bottom: 30px;
+    };
+};
+
+@media screen and (max-width:1000px) {
+    .lng-text-before-form, 
+    .lng-text-before-form2 {
+        font-size: 18px;
+    };
+};
+
+@media screen and (max-width:989px) {
+    #first-new-car {
+        display: flex;
+    };
+    .new-car {
+        margin-bottom: 30px;
+    };
+};
+
+
+@media screen and (max-width:880px) {
+    .form-flex-container,
+    .slider-wrap,
+    .form-select, 
+    .form-select2 {
+        flex-basis: 100%;
+    };
+    .slider-wrap {
+        min-height: 115px;
+    }
+    #first-slider {
+        margin-bottom: 30px;
+    };
+    .lng-form-submit {
+        margin-top: 40px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    };
+    .lng-text-before-form, 
+    .lng-text-before-form2 {
+        font-size: 16px;
+        text-align: center;
+    };
+    h2 {
+        margin-bottom: 45px;
+    };
+    .contact-us {
+        padding-bottom: 20px;
+    };
+    .mottoLeft {
+        max-width: 100%;
+    };
+};
+
+@media screen and (max-width:740px) {
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    };
+    .lng-motto-text {
+        font-size: 20px;
+    };
+    .d-block {
+        height: 300px;
+    };
+    .mottoLeft {
+        min-height: 260px;
+    };
+};
+
+@media screen and (max-width:699px) {
+    .receipt-container {
+        justify-content: center;
+    };
+};
+
+@media screen and (max-width:535px) {
+    .stages-flex-container {
+        justify-content: center;
+    };
+};
+
+@media screen and (max-width:500px) {
+    .phone li a {
+        font-size: 16px;
+    };
+    .logo-text {
+        font-size: 26px;
+    };
+    header,
+    main, 
+    .footer-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    };
+    h2 {
+        font-size: 30px;
+    };
+    h1 {
+        font-size: 36px;
+    };
+    .lng-motto-text {
+        font-size: 18px;
+    };
+    .price {
+        font-size: 18p+x
+        ;
+    };
+    .lng-year-car,   
+    .year-edition {
+        font-size: 16px;
+    };
+    .lng-stage1, 
+    .lng-stage2, 
+    .lng-stage3, 
+    .lng-stage4, 
+    .lng-stage5 {
+        font-size: 16px;
+    };
+    .form input, 
+    .form select {
+        font-size: 16px;
+    };
+    .d-block {
+        height: 220px;
+    };
+    .lng-contact, 
+    .lng-form-submit {
+        font-size: 20px;
+    };
+    .mottoLeft {
+        min-height: 280px;
+    };
+};
+
+@media screen and (max-width:400px) {
+    .lng-contact, 
+    .lng-form-submit {
+        font-size: 20px;
+    };
+    .d-block {
+        height: 190px;
+    };
+    .mottoLeft {
+        min-height: 300px;
+    };
+};

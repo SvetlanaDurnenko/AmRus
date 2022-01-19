@@ -1,0 +1,185 @@
+.product-container {
+    font-size: $fontSizeAccent;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 120px;
+}
+
+.lng-info,
+.price-avto {
+    font-weight: 600;
+}
+
+.lng-info {
+    flex-basis: 100%;
+}
+
+
+.product-description {
+    flex-basis: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 320px;
+}
+
+.left-part,
+.right-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px;
+}
+
+.product-photo {
+    border-left: 2px solid $accentColor;
+    margin-left: 24px;
+    padding-left: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-family: $accentFontFamily;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.photo-block {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+.photo-block img {
+    border-radius: 12px;
+}
+
+#main-photo {
+    max-height: 456px;
+    flex-basis: 100%;
+    object-fit: cover;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+#img-block {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+
+#img-block img {
+    max-height: 143px;
+    width: 18%;
+    object-fit: cover;
+}
+
+.d-none {
+    display: none;
+}
+
+#img-block img:hover {
+    cursor: pointer;
+}
+
+.opacity {
+    opacity: .5;
+}
+
+.lng-order,
+.lng-form-submit,
+.lng-order2 {
+    background-color: $accentColor;
+    border: none;
+    cursor: pointer;
+    height: 3em;
+    width: 12em;
+    font-size: $fontSizeAccent;
+    border-radius: .5em;
+    color: #FFFFFF;
+    margin-top: 70px;
+}
+
+.lng-order2 {
+    display: none;
+}
+
+.lng-order:hover,
+.lng-form-submit:hover,
+.lng-order2:hover {
+    box-shadow: $shadow;
+    transition: .8s;
+}
+
+.contact-us {
+    padding-top: 120px;
+    max-width: 835px;
+    margin: 0 auto;
+    padding-bottom: 70px;
+    display: none;
+}
+
+.lng-contact-us {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+    flex-wrap: wrap;
+    font-size: $textFontSize;
+    min-height: 550px;
+}
+
+.form input,
+.form textarea {
+    height: 47px;
+    width: 47%;
+    border: 2px solid $mainTextColor;
+    border-radius: 8px;
+    font-size: $textFontSize;
+    padding-left: 14px;
+}
+
+.lng-nameMist,
+.lng-phoneMist {
+    font-family: $accentFontFamily;
+    font-weight: 600;
+    color: red;
+    display: none;
+}
+
+.lng-phoneMist {
+    text-align: end;
+}
+
+.form-flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 47%;
+    min-height: 75px;
+}
+
+.form-flex-container input {
+    width: 100%;
+}
+
+.lng-form-submit {
+    margin-top: 15px;
+}
+
+.lng-text-before-form,
+.lng-text-before-form2{
+    font-size: $fontSizeAccent;
+    font-family: $mainFontFamily;
+}
+
+textarea {
+    resize: none;
+    flex-basis: 100%;
+    min-height: 190px;
+}
+

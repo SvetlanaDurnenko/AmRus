@@ -1,0 +1,128 @@
+@media screen and (max-width: 1200px) {
+    .parts {
+        display: none;
+    }
+    .currency-flex {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .wrap {
+        align-items: center;
+    }
+    .menu-container {
+        display: flex;
+        min-width: 130px;
+        justify-content: space-between;
+    }
+    .parts-footer {
+        display: none;
+    }
+    .footer-img-block {
+        display: none;
+    }
+    .footer-container {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #reviewsContainer {
+        margin-left: 0;
+    }
+    .reviews-block {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    form input {
+        width: 100%;
+    }
+    h2 {
+        margin-bottom: 45px;
+    }
+    .lng-send-review {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .form-container {
+        padding-bottom: 70px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .reviews-block {
+        flex-direction: column;
+    }
+    .img-reviews {
+        margin-right: 0;
+        margin-bottom: 30px;
+        align-self: center;
+    }
+    h3 {
+        align-self: center;
+    }
+    .name-user {
+        align-self: center;
+    }
+    .text-user {
+        text-align: justify;
+    };
+    .popup {
+        left: 54%;
+    };
+};
+
+@media screen and (max-width: 500px) {
+    .phone li a {
+        font-size: 16px;
+    };
+    .logo-text {
+        font-size: 26px;
+    };
+    header,
+    main,
+    .footer-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    };
+    h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    };
+    h3 {
+        font-size: 25px;
+    };
+    .name-user {
+        font-size: 18px;
+    };
+    .text-user,
+    .lng-rating-text {
+        font-size: 16px;
+    };
+    form input,
+    .button-upload,
+    #lng-form-review {
+        font-size: 16px;
+    };
+    .lng-send-review {
+        font-size: 20px;
+    };
+    .popup {
+        left: 59%;
+        width: 300px;
+    };
+};
+
+@media screen and (max-width: 400px) {
+    .lng-send-review {
+        font-size: 18px;
+    };
+    .popup {
+        left: 66%;
+        width: 270px;
+    };
+};

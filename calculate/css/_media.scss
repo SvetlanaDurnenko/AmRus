@@ -1,0 +1,126 @@
+@media screen and (max-width: 1200px) {
+    .parts {
+        display: none;
+    }
+    .currency-flex {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .wrap {
+        align-items: center;
+    }
+    .menu-container {
+        display: flex;
+        min-width: 130px;
+        justify-content: space-between;
+    }
+    .parts-footer {
+        display: none;
+    }
+    .footer-img-block {
+        display: none;
+    }
+    .footer-container {
+        align-items: center;
+    }
+};
+
+@media screen and (max-width: 980px) {
+    .calculate-container {
+        margin-left: 0;
+    };
+};
+
+@media screen and (max-width: 880px) {
+    .price-calculate,
+    .label-flex {
+        flex-basis: 100%;
+    }
+    h2 {
+        margin-bottom: 45px;
+    };
+    .price-calculate {
+        justify-content: flex-start;
+    }
+    .currency {
+        margin-left: 15px;
+    }
+    .lng-button-calculate {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    };
+    .calculate-container {
+        margin-bottom: 70px;
+    };
+};
+
+@media screen and (max-width: 530px) {
+    .currency {
+        width: 65px;
+    };
+};
+
+
+@media screen and (max-width: 525px) {
+    .currency {
+        margin-left: 5px;
+    };
+};
+
+@media screen and (max-width: 500px) {
+    header,
+    main,
+    .footer-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    };
+    .phone li a {
+        font-size: $mediaFontSize;
+    }
+    .logo-text {
+        font-size: 26px;
+    }
+    h2 {
+        font-size: 30px;
+    };
+    .calculate-currency span {
+        font-size: 18px;
+    };
+    form input {
+        font-size: $mediaFontSize;
+    };
+    .lng-button-calculate {
+        font-size: 20px;
+    };
+    h2 {
+        margin-bottom: 30px;
+    };
+    .currency {
+        width: 60px;
+    };
+    #calculate-result {
+        font-size: 18px;
+    };
+    h3 {
+        font-size: 25px;
+    };
+};
+
+
+@media screen and (max-width: 400px) {
+    .calculate-currency span {
+        font-size: $mediaFontSize;
+    };
+    .lng-button-calculate {
+        font-size: 18px;
+    };
+    #calculate-result {
+        font-size: $mediaFontSize;
+    };
+    .currency {
+        width: 45px;
+    };
+}

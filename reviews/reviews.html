@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmRus</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="loading-window">
+            <div class="car">
+                <div class="strike"></div>
+                <div class="strike strike2"></div>
+                <div class="strike strike3"></div>
+                <div class="strike strike4"></div>
+                <div class="strike strike5"></div>
+                <div class="car-detail spoiler"></div>
+                <div class="car-detail back"></div>
+                <div class="car-detail center"></div>
+                <div class="car-detail center1"></div>
+                <div class="car-detail front"></div>
+                <div class="car-detail wheel"></div>
+                <div class="car-detail wheel wheel2"></div>
+            </div>
+            <div class="text">
+                <span>Loading</span><span class="dots">...</span>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="wrap">
+            <div class="logo">
+                <a class="logo-text" href="../index.html">AmRus</a>
+            </div>
+            <ul class="parts">
+                <!-- <li><a href="#" class="lng-about-us">Про нас</a></li> -->
+                <li><a href="../404/404.html" class="lng-cars-from-ukraine">Авто з України</a></li>
+                <li><a href="../404/404.html" class="lng-cars-from-korea">Авто з Кореї</a></li>
+                <li><a href="../calculate/calculate.html" class="lng-customs-clearance">Розмитнення</a></li>
+                <li><a href="./reviews.html" class="lng-reviews">Відгуки</a></li>
+            </ul>
+            <div class="currency-flex">
+                <div class="currency-wrap">
+                    <p id="USD"></p>
+                    <p>
+                        <span id="EUR-buy"></span>
+                        <span id="EUR-sale">&#8364;</span>
+                    </p>
+                </div>
+            </div>
+            <!-- <ul class="phone">
+                <li><a href="tel:0683812489">+380 68 38 12 489</a></li>
+                <li><a href="tel:0982825736">+380 98 28 25 736</a></li>
+            </ul> -->
+            <div class="menu-container">
+                <div class="language-container">
+                    <div class="langNow">
+                        <span id="langPage"></span>
+                        <span class="allow"></span>
+                    </div>
+                    <form id="language">
+                        <label class="changeLang">
+                            <input class="custom-radio" type="radio" name="languages" value="ua" id="lang-ua">
+                            <span id="firstLang">ua</span>
+                        </label>
+                        <label class="changeLang">
+                            <input class="custom-radio" type="radio" id="lang-ru" name="languages" value="ru">
+                            <span id="secondLang">ru</span>
+                        </label>
+                    </form>
+                </div>
+                <div class="menu">
+                    <img src="./img/menu.png" alt="menu">
+                </div>
+            </div>
+        </div>
+        <div class="menu-popup-fade">
+            <div class="menu-popup">
+                <a href="#" class="menu-popup-close"><img src="./img/Х.png" alt="Закрыть"></a>
+                <div class="menu-currency-flex">
+                    <div class="menu-currency-wrap">
+                        <p id="USD-menu"></p>
+                        <p>
+                            <span id="EUR-buy-menu"></span>
+                            <span id="EUR-sale-menu">&#8364;</span>
+                        </p>
+                    </div>
+                </div>
+                <ul class="menu-parts">
+                    <li><a href="../404/404.html" class="lng-cars-from-ukraine2">Авто з України</a></li>
+                    <li><a href="../404/404.html" class="lng-cars-from-korea2">Авто з Кореї</a></li>
+                    <li><a href="../calculate/calculate.html" class="lng-customs-clearance2">Розмитнення</a></li>
+                    <li><a href="../reviews/reviews.html" class="lng-reviews2">Відгуки</a></li>
+                </ul>
+                <div class="menu-footer-img-block">
+                    <a href="../404/404.html"><img src="./img/greenYoutube.png" alt="Youtube"></a>
+                    <a href="../404/404.html"><img src="./img/greenInstagram.png" alt="Instagram"></a>
+                    <a href="../404/404.html"><img src="./img/greenFacebook.png" alt="Facebook"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2 class="lng-reviews-header">Відгуки наших клієнтів</h2>
+        <div id="reviewsContainer">
+            <div class="reviews-block">
+                <img class="img-reviews" src="./img/car1.png" alt="Car">
+                <div class="reviews-flex-container">
+                    <h3>Volkswagen Jetta Sel 2014 </h3>
+                    <span class="name-user">Олег Самойленко</span>
+                    <p class="text-user lng-review1">Вирішив привезти собі нове авто із Кореї. Зайшов на сайт, щоб
+                        подивитися цінову політику моделі, що цікавить. Задоволений працею компанії. Отриманим
+                        автомобілем задоволений.</p>
+                    <div class="stars-date-block">
+                        <div class="stars">
+                            <span class="star"><img src="./img/star.png" alt="Star"></span>
+                            <span class="star"><img src="./img/star.png" alt="Star"></span>
+                            <span class="star"><img src="./img/star.png" alt="Star"></span>
+                            <span class="star"><img src="./img/star.png" alt="Star"></span>
+                            <span class="star"><img src="./img/star.png" alt="Star"></span>
+                        </div>
+                        <span class="date-reviews">21.08.2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-block">
+                <img class="img-reviews" src="./img/car2.png" alt="Car">
+                <div class="reviews-flex-container">
+                    <h3>HYUNDAI I30 1.5 COMFORT 6AT</h3>
+                    <span class="name-user">Олексій Курменков</span>
+                    <p class="text-user">Цю компанію знайшов випадково в Інтернеті. Я почитав відгуки, начеб-то все
+                        влаштувало. Ми зв’язались і мені допомогли розібратися в цій нелегкій справі. Машина мені
+                        приїхала вчасно, до речі дуже швидко. Велике вам дякую.</p>
+                    <div class="stars-date-block">
+                        <div class="stars">
+                            <span class="star"><img src="./img/star.png" alt="Star"></span>
+                            <span class="star"><img src="./img/star.png" alt="Star"></span>
+                            <span class="star"><img src="./img/star.png" alt="Star"></span>
+                            <span class="star"><img src="./img/star.png" alt="Star"></span>
+                            <span class="star"><img src="./img/star.png" alt="Star"></span>
+                        </div>
+                        <span class="date-reviews">24.10.2021</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-block">
+                <img class="img-reviews" src="./img/car3.png" alt="Car">
+                <div class="reviews-flex-container">
+                    <h3>Volvo C30 2007</h3>
+                    <span class="name-user">Елена Куртова</span>
+                    <p class="text-user lng-review1">Машина хорошая это совершенно точно. К недостаткам можно отнести
+                        только наличие двух дверей, низкий клиренс. Отличный скандинавский дизайн, все просто и
+                        лаконично.</p>
+                    <div class="stars-date-block">
+                        <div class="stars">
+                            <span class="star"><img src="./img/star.png" alt="Star"></span>
+                            <span class="star"><img src="./img/star.png" alt="Star"></span>
+                            <span class="star"><img src="./img/star.png" alt="Star"></span>
+                            <span class="star"><img src="./img/star.png" alt="Star"></span>
+                            <span class="star"><img src="./img/fullstar.png" alt="Star"></span>
+                        </div>
+                        <span class="date-reviews">1.11.2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-container">
+            <h2 class="lng-leave-review">Залишити відгук</h2>
+            <form class="form-review">
+                <input type="text" placeholder="Автомобіль" id="lng-form-avto">
+                <input type="text" placeholder="Ім'я" id="lng-form-name">
+                <label class="button-upload">
+                    <input type="file" accept="image/*" onchange="onFileselected(event)">
+                    <p class="lng-file-upload">Завантажити фото авто</p>
+                    <img src="./img/upload.png" alt="Load">
+                </label>
+                <textarea id="lng-form-review" placeholder="Залиште відгук тут"></textarea>
+                <div class="rating-stars">
+                    <span class="lng-rating-text">Оцініть нашу роботу</span>
+                    <div class="rating">
+                        <input class="rating__input hidden--visually" type="radio" id="5-star" name="rating"
+                            value="5" />
+                        <label class="rating__label" for="5-star" title="5 out of 5 rating">
+                            <span class="rating__icon" aria-hidden="true"></span>
+                            <span class="hidden--visually">5 out of 5 rating</span>
+                        </label>
+                        <input class="rating__input hidden--visually" type="radio" id="4-star" name="rating"
+                            value="4" />
+                        <label class="rating__label" for="4-star" title="4 out of 5 rating">
+                            <span class="rating__icon" aria-hidden="true"></span><span class="hidden--visually">4 out of
+                                5 rating</span>
+                        </label>
+                        <input class="rating__input hidden--visually" type="radio" id="3-star" name="rating"
+                            value="3" />
+                        <label class="rating__label" for="3-star" title="3 out of 5 rating">
+                            <span class="rating__icon" aria-hidden="true"></span>
+                            <span class="hidden--visually">3 out of 5 rating</span>
+                        </label>
+                        <input class="rating__input hidden--visually" type="radio" id="2-star" name="rating"
+                            value="2" />
+                        <label class="rating__label" for="2-star" title="2 out of 5 rating">
+                            <span class="rating__icon" aria-hidden="true"></span>
+                            <span class="hidden--visually">2 out of 5 rating</span></label>
+                        <input class="rating__input hidden--visually" type="radio" id="1-star" name="rating"
+                            value="1" />
+                        <label class="rating__label" for="1-star" title="1 out of 5 rating">
+                            <span class="rating__icon" aria-hidden="true"></span>
+                            <span class="hidden--visually">1 out of 5 rating</span>
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <button class="lng-send-review" id="opener" onclick="addComment()">Відправити відгук</button>
+            <img id="myImage"></img>
+        </div>
+        <div class="popup-fade">
+            <div class="popup">
+                <a class="popup-close" href="#"><img src="./img/Х.png" alt="Закрыть"></a>
+                <h2 class="lng-thank">Дякуємо за відгук!</h2>
+                <img class="review-car" src="./img/carReview.png" alt="Car">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <a class="logo-text" href="../index.html">AmRus</a>
+            </div>
+            <ul class="parts-footer">
+                <!-- <li><a href="#" class="lng-about-us-footer">Про нас</a></li> -->
+                <li><a href="../404/404.html" class="lng-cars-from-ukraine-footer">Авто з України</a></li>
+                <li><a href="../404/404.html" class="lng-cars-from-korea-footer">Авто з Кореї</a></li>
+                <li><a href="../calculate/calculate.html" class="lng-customs-clearance-footer">Розмитнення</a></li>
+                <li><a href="./reviews.html" class="lng-reviews-footer">Відгуки</a></li>
+            </ul>
+            <ul class="phone">
+                <li><a href="tel:0683812489">+380 68 38 12 489</a></li>
+                <li><a href="tel:0982825736">+380 98 28 25 736</a></li>
+            </ul>
+            <div class="footer-img-block">
+                <a href="../404/404.html"><img src="./img/youtube.png" alt="Youtube"></a>
+                <a href="../404/404.html"><img src="./img/instagram.png" alt="Instagram"></a>
+                <a href="../404/404.html"><img src="./img/facebook.png" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="./js/lang.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
